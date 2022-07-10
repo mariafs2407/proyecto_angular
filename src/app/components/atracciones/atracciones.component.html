@@ -1,0 +1,23 @@
+<section id="atracciones" class="borde">
+    <div class="container">
+      <h2>Atracciones</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Actividades</th>
+            <th>Mejor Restaurante</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tbody>
+          <tr *ngFor="let item of listaDestino" >
+            <td>{{item.nombre}}</td>
+            <td>{{item.actividades}}</td>
+            <td>{{item.restaurante}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</section>

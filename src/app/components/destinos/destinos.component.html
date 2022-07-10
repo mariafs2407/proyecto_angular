@@ -1,0 +1,26 @@
+<section id="destinos" class="padded">
+    <div class="container">
+      <h2>Destinos</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col" *ngFor="let item of listaDestino">
+          <div class="card">
+            <img src="https://isilep1.000webhostapp.com/img/{{item.imagen}}"class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">{{item.nombre}}</h4>
+              <small>Actividades:</small>              
+              <h5 class="card-title">{{item.actividades}}</h5>
+              <small>Restaurante recomendado:</small>  
+              <h5 class="card-title">{{item.restaurante}}</h5>
+              <small>Hotel recomendado:</small>
+              <h5 class="card-text">{{item.hospedaje}}</h5>
+              <p>{{item.ubicacion}}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>

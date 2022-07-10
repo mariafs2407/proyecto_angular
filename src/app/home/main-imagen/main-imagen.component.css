@@ -1,0 +1,94 @@
+i{
+    color: #27b36a;
+}
+
+h1{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+    color: #878787;
+    padding-top: 15px;
+}
+
+#submit-button-newsletter p{
+    font-weight: 700;
+}
+.home-section{
+    background-color: #f5f7fc;
+    padding: 60px;
+    
+}
+.padingtop{
+   padding-top: 20px;
+}
+
+.minipad{
+    padding-left: 3px;
+}
+
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
+.align-items-center {
+    align-items: center!important;
+}
+
+button{    
+    border: none;
+    cursor: pointer;    
+    background-color: #fff;  
+    padding:17px ;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.hero-image{
+    border-radius: 50%;    
+    box-shadow: 9px 9px 5px #86a6acad;
+}
+img{
+    margin:0 -10px 0 0 ;
+}
+
+
+
+/* codigo del boton comienza */
+#submit-button-newsletter{
+    width: 145px;
+    height: 62px;
+    background: #e52f37;
+    border: none;
+    color: #fff;
+    display: inline;
+    margin: 0!important;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* ---codigo de bloque blanco */
+#email_newsletter{
+    
+    background-position-x: 15px;
+    background-position-y: 20px;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background:no-repeat 15px 20px;
+    width: 50%;
+    /* max-width: 350px; */
+    height: 59px;
+    padding: 0 20px 0 0;
+    border: none!important;
+    background-color: #fff;
+    
+}
+

@@ -1,0 +1,21 @@
+.navbar {
+    width: 100%;    
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+	left: 0;
+    z-index: 10000;
+}
+
+a{
+    color:#595959;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+}
+.navbar-brand{
+    margin-right: 0rem;
+}
+
+
+ 

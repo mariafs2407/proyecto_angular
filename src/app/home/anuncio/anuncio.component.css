@@ -1,0 +1,10 @@
+#anuncio{
+    width: 100%;
+    background-color: #f5f7fc;  
+    display:flex;  
+    justify-content: center;    
+}
+#anuncio .img{
+    width:90%;
+    padding: 40px;
+}

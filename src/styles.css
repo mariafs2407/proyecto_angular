@@ -1,0 +1,16 @@
+/* EFECTO PARA EL TIPO DE LETRA DEL PROYECTO  */
+*{
+    font-family: 'Nunito', sans-serif;
+}
+.padded{
+    padding-top: 60px;
+    padding-bottom: 60px;    
+}
+h1{   
+    font-weight:700;
+    font-size:700px;
+}
+h2{    
+    font-size:100px;
+}
+

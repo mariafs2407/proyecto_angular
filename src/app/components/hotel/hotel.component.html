@@ -1,0 +1,25 @@
+<section id="hotel" class="padded">
+    <div class="container">
+        <h2>Hotel</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group">
+                    <!-- elemento de la lista q se va a repetir -->
+                    <li class="list-group-item" *ngFor="let item of listaDestino"
+                      (click)= "seleccionar(item)"
+                      [class.active]="item === destinoElegido"> 
+                      <h6>{{item.nombre}}</h6> 
+                      <small>{{item.ubicacion}}</small>                      
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9" *ngIf="destinoElegido">
+                <h3>{{destinoElegido.nombre}} </h3>
+                <p>{{destinoElegido.ubicacion}} </p>  
+                <!-- el parametro de destino cambiara en base a lo que elijamos -->
+                <app-lugar [destinoX]="destinoElegido"></app-lugar>
+            </div>            
+        </div>
+    </div>    
+</section>
+  

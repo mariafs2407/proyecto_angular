@@ -1,0 +1,31 @@
+<section id="departamentos" class="padded">
+    <div class="container">
+      <h2>Departamentos</h2>  
+      <div class="mb-3">  
+        <label  class="form-label">Buscar Departamento</label>
+        <input type="text" class="form-control" [(ngModel)]="departamentosFilter.nombre"
+        placeholder="Escribe el nombre del departamento que buscas">
+      </div>
+      <table class = "table">
+        <thead>
+          <tr>
+            <th (click)= "setOrder('nombre')">Nombre</th>
+            <th (click)= "setOrder('ubicacion')">Ubicacion</th>
+            <th (click)= "setOrder('fiestas')">Fiestas Tipicas</th>
+            <th (click)= "setOrder('poblacion')">Poblacion</th>
+          </tr>
+        </thead>
+        <tbody *ngIf="listaDepartamentos"> 
+          <tr *ngFor="let item of listaDepartamentos| filterBy: departamentosFilter| orderBy: order : reversa | paginate: { itemsPerPage: 10, currentPage: p }">
+            <td>{{item.nombre}}</td>
+            <td>{{item.ubicacion}}</td>
+            <td>{{item.fiestas}}</td>
+            <td>{{item.poblacion}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <pagination-controls (pageChange)="p = $event"
+                      previousLabel="Anterior"
+                      nextLabel="Siguiente">
+      </pagination-controls>
+    </div>

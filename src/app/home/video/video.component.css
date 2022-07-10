@@ -1,0 +1,45 @@
+iframe{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px 8px;
+    background-color: #f6f7f8;
+    box-shadow: 15px 10px 20px rgb(0 0 0 / 15%);
+}
+
+.texto{
+    align-items: center;
+}
+.red{
+    color: red;
+}
+
+i{
+    color: #27b36a;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+p{
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #7c8595;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+h6{
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #071e55;
+}
+.fondo{
+    background-color: #f5f7fc;
+    padding:50px;
+}
+

@@ -1,0 +1,19 @@
+.espacio{
+    padding: 40px;
+}
+h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: #071e55;
+}
+h5{
+    font-size: 20px;
+    font-weight: 700;
+    color: #071e55;
+}
+p{
+    font-family: 'Open Sans';
+    font-size: 17px;
+    color: #7c8595;
+    font-weight: 400;
+}
